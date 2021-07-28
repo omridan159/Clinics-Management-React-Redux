@@ -1,11 +1,12 @@
 import React from 'react';
-import Dashboard from './pages/dashborad';
+import MainRoutes from './routes/mainRoutes';
+import './styles/output.css'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-        <Dashboard />
+        <MainRoutes />
     </div>
   );
 }
