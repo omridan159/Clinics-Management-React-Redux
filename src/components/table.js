@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Icon from '../components/shared/Icon';
 import { columns } from '../constants/Table';
 import { updateClinicsData } from '../store/slices/clinicsDataSlice';
@@ -7,7 +7,10 @@ import ReactDataGrid from '@inovua/reactdatagrid-enterprise';
 import '@inovua/reactdatagrid-enterprise/index.css';
 import '@inovua/reactdatagrid-enterprise/theme/default-dark.css';
 
-const gridStyle = { minHeight: 550, maxHeight: 700 };
+const gridStyle = {
+   minHeight: 550,
+   maxHeight: 700,
+};
 
 const Table = ({ data }) => {
    const [serach, setSearch] = useState('');
@@ -15,9 +18,9 @@ const Table = ({ data }) => {
 
    const dispatch = useDispatch();
 
-   const onEditComplete = useCallback(({ value, columnId, rowIndex }) => {
+   const onEditComplete = ({ value, columnId, rowIndex }) => {
       dispatch(updateClinicsData({ value, columnId, rowIndex }));
-   }, []);
+   }
 
    useEffect(() => {
       if (serach) {
@@ -29,12 +32,17 @@ const Table = ({ data }) => {
          });
          setTimeout(function () {
             setClinicsData(filterData);
-         }, 700);
+         }, 750);
       }
    }, [serach]);
 
    const handleChange = (e) => {
       setSearch(e.target.value);
+
+      if(!e.target.value){
+         setClinicsData(data);
+      }
+
    };
 
    return (

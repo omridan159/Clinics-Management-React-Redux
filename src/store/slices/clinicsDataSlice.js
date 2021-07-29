@@ -1,5 +1,5 @@
-import { createSlice, current } from '@reduxjs/toolkit';
-import { clinicsData } from '../../constants/Dashboard';
+import { createSlice } from '@reduxjs/toolkit';
+import { clinicsData } from '../../constants/Clinics';
 
 const initialState = {
    data: clinicsData,
