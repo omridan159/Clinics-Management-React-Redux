@@ -2,6 +2,7 @@ import React from 'react';
 import Table from '../components/Table';
 import Header from '../components/Header';
 import ClinicsMap from '../components/ClinicsMap';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
 const Wrapper = styled.div.attrs({
@@ -20,13 +21,14 @@ const MapWrapper = styled.div.attrs({
 `;
 
 const Dashboard = () => {
+   const data = useSelector((state) => state.clinicsData.data);
    return (
       <>
          <Header />
          <Wrapper>
-            <Table />
+            <Table data={data} />
             <MapWrapper>
-               <ClinicsMap />
+               <ClinicsMap data={data} />
             </MapWrapper>
          </Wrapper>
       </>

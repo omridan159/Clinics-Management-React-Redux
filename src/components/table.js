@@ -2,17 +2,16 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Icon from '../components/shared/Icon';
 import { columns } from '../constants/Table';
 import { updateClinicsData } from '../store/slices/clinicsDataSlice';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ReactDataGrid from '@inovua/reactdatagrid-enterprise';
 import '@inovua/reactdatagrid-enterprise/index.css';
 import '@inovua/reactdatagrid-enterprise/theme/default-dark.css';
 
 const gridStyle = { minHeight: 550, maxHeight: 700 };
 
-const Table = () => {
+const Table = ({ data }) => {
    const [serach, setSearch] = useState('');
    const [clinicsData, setClinicsData] = useState(null);
-   const data = useSelector((state) => state.clinicsData.data);
 
    const dispatch = useDispatch();
 

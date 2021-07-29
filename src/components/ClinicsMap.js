@@ -1,11 +1,6 @@
 import React from 'react';
 import mapStyles from '../constants/MapStyles';
-import { clinicsData } from '../constants/Dashboard';
-import {
-   GoogleMap,
-   useLoadScript,
-   Marker,
-} from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
 const mapContainerStyle = {
    height: '60vh',
@@ -23,7 +18,7 @@ const center = { lat: 31.2540165064844, lng: 34.7907892544368 };
 
 const libraries = ['places'];
 
-const ClinicsMap = () => {
+const ClinicsMap = ({ data }) => {
    const { isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
       libraries,
@@ -45,7 +40,7 @@ const ClinicsMap = () => {
          defaultCenter={{ lat: 31.2540165064844, lng: 34.7907892544368 }}
          defaultOptions={{ styles: mapStyles }}
       >
-         {clinicsData.map((clinic) => (
+         {data.map((clinic) => (
             <Marker
                key={clinic.Name}
                position={{
