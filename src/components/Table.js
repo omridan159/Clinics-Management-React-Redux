@@ -5,12 +5,7 @@ import '@inovua/reactdatagrid-enterprise/theme/default-dark.css';
 import Icon from '../components/shared/Icon';
 import ReactDataGrid from '@inovua/reactdatagrid-enterprise';
 import { updateClinicsData } from '../store/slices/clinicsDataSlice';
-import { columns } from '../constants/Table';
-
-const gridStyle = {
-   minHeight: 550,
-   maxHeight: 700,
-};
+import { gridStyle, columns } from '../constants/Table';
 
 const Table = ({ data }) => {
    const [serach, setSearch] = useState('');

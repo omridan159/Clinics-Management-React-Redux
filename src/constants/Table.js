@@ -1,3 +1,8 @@
+const gridStyle = {
+   minHeight: 550,
+   maxHeight: 700,
+};
+
 const columns = [
    { name: 'ID', header: 'ID', maxWidth: 60, defaultFlex: 1 },
    { name: 'HMOname', header: 'HMOname', minWidth: 50, defaultFlex: 1 },
@@ -11,4 +16,4 @@ const columns = [
    }
 ];
 
-export { columns };
+export { columns,gridStyle };

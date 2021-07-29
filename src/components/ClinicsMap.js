@@ -1,6 +1,7 @@
 import React from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 import styled from 'styled-components';
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import { mapContainerStyle, options, mapCenter, libraries } from '../constants/ClinicsMap';
 
 const Title = styled.h1.attrs()`
    position: relative;
@@ -13,31 +14,14 @@ const Title = styled.h1.attrs()`
    font-family: 'Righteous';
 `;
 
-const mapContainerStyle = {
-   height: '60vh',
-   width: '60vw',
-   margin: 'auto',
-};
-
-const options = {
-   disableDefaultUI: true,
-   zoomControl: true,
-};
-
-const center = { lat: 31.2540165064844, lng: 34.7907892544368 };
-
-const libraries = ['places'];
-
 const ClinicsMap = ({ data }) => {
    const { isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
       libraries,
    });
 
-   console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
-
-   if (loadError) return 'Error while loading maps';
-   if (!isLoaded) return 'Loading Maps';
+   if (loadError) return 'An error occurred while loading maps';
+   if (!isLoaded) return 'Loading Maps...';
 
    return (
       <>
@@ -46,7 +30,7 @@ const ClinicsMap = ({ data }) => {
             id='map'
             mapContainerStyle={mapContainerStyle}
             zoom={13}
-            center={center}
+            center={mapCenter}
             options={options}
             defaultZoom={15}
             defaultCenter={{ lat: 31.2540165064844, lng: 34.7907892544368 }}
