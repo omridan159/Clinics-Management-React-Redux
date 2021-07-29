@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Icon from '../components/shared/Icon';
-import { columns } from '../constants/Table';
-import { updateClinicsData } from '../store/slices/clinicsDataSlice';
 import { useDispatch } from 'react-redux';
-import ReactDataGrid from '@inovua/reactdatagrid-enterprise';
 import '@inovua/reactdatagrid-enterprise/index.css';
 import '@inovua/reactdatagrid-enterprise/theme/default-dark.css';
+import Icon from '../components/shared/Icon';
+import ReactDataGrid from '@inovua/reactdatagrid-enterprise';
+import { updateClinicsData } from '../store/slices/clinicsDataSlice';
+import { columns } from '../constants/Table';
 
 const gridStyle = {
    minHeight: 550,
@@ -20,29 +20,34 @@ const Table = ({ data }) => {
 
    const onEditComplete = ({ value, columnId, rowIndex }) => {
       dispatch(updateClinicsData({ value, columnId, rowIndex }));
-   }
+   };
 
    useEffect(() => {
       if (serach) {
-         const filterData = data.filter((clinic) => {
+         const filterClinicsData = data.filter((clinic) => {
             return (
                clinic.HMOname.includes(serach) ||
                clinic.neighborhood.includes(serach)
             );
          });
-         setTimeout(function () {
-            setClinicsData(filterData);
-         }, 750);
+
+         const delayTheSerachExecution = setTimeout(() => {
+            setClinicsData(filterClinicsData);
+         }, 500);
+
+         return () => clearTimeout(delayTheSerachExecution);
       }
+      // eslint-disable-next-line
    }, [serach]);
 
    const handleChange = (e) => {
       setSearch(e.target.value);
 
-      if(!e.target.value){
-         setClinicsData(data);
+      if (!e.target.value) {
+         setTimeout(() => {
+            setClinicsData(data);
+         }, 500);
       }
-
    };
 
    return (
