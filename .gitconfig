@@ -1,5 +1,0 @@
-[user]
-      # These values are set in ~/.gitconfig_local
-
-[include]
-      path = ~/.gitconfig_local
