@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter,Switch, Route, Redirect } from 'react-router-dom';
-import Dashboard from '../pages/dashborad';
-import ClinicsMap from '../pages/clinicsMap';
+import Dashboard from '../pages/Dashborad';
 
 const MainRoutes = () => {
    return (
@@ -11,7 +10,6 @@ const MainRoutes = () => {
                <Redirect to='/dashboard' />
             </Route>
             <Route exact path='/dashboard' component={Dashboard} />
-            <Route exact path='/map' component={ClinicsMap} />
          </Switch>
       </BrowserRouter>
    );

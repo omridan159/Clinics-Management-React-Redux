@@ -1,6 +1,6 @@
 import React from 'react';
-import mapStyles from '../constants/mapStyles';
-import { clinicsData } from '../constants/dashboard';
+import mapStyles from '../constants/MapStyles';
+import { clinicsData } from '../constants/Dashboard';
 import {
    GoogleMap,
    useLoadScript,
@@ -8,8 +8,9 @@ import {
 } from '@react-google-maps/api';
 
 const mapContainerStyle = {
-   height: '100vh',
-   width: '100vw',
+   height: '60vh',
+   width: '60vw',
+   margin: 'auto',
 };
 
 const options = {
