@@ -9,18 +9,13 @@ import { gridStyle, columns } from '../constants/Table';
 
 const Table = ({ data }) => {
    const [serach, setSearch] = useState('');
-   const [clinicsData, setClinicsData] = useState(null);
+   const [clinicsData, setClinicsData] = useState(data);
 
    const dispatch = useDispatch();
 
-   const onEditComplete = ({ value, columnId, rowIndex, data }) => {
-      const key = data.key;
-      dispatch(updateClinicsData({ value, columnId, key }));
-   };
-
    useEffect(() => {
       if (serach) {
-         const filterClinicsData = data.filter((clinic) => {
+         const filterClinicsData = clinicsData.filter((clinic) => {
             return (
                clinic.HMOname.includes(serach) ||
                clinic.neighborhood.includes(serach)
@@ -45,6 +40,21 @@ const Table = ({ data }) => {
          }, 500);
       }
    };
+   
+   const onEditComplete = ({ value, columnId, rowIndex, data }) => {
+      const key = data.key;
+      dispatch(updateClinicsData({ value, columnId, key }));
+
+      let newClinicsData = clinicsData.map(clinic => 
+         {
+           if (clinic.key === key){
+             return {...clinic, [columnId]: value};
+           }
+           return clinic; 
+         });
+
+      setClinicsData(newClinicsData);
+   };
 
    return (
       <>
@@ -67,7 +77,7 @@ const Table = ({ data }) => {
             editable
             rtl={true}
             columns={columns}
-            dataSource={clinicsData ? clinicsData : data}
+            dataSource={clinicsData}
             theme={'default-dark'}
             style={gridStyle}
          />
