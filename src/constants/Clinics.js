@@ -8,6 +8,7 @@ const clinicsData = [
       address: 'ביאליק',
       neighborhood: 'ב',
       HMOname: 'כללית',
+      key: 0,
    },
    {
       X: '34.7922136527957',
@@ -18,6 +19,7 @@ const clinicsData = [
       address: 'דוד המלך',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 1,
    },
    {
       X: '34.7995278732813',
@@ -28,6 +30,7 @@ const clinicsData = [
       address: 'קלאוזנר',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 2,
    },
    {
       X: '34.8008696571768',
@@ -38,6 +41,7 @@ const clinicsData = [
       address: 'רינגלבלו',
       neighborhood: 'ד',
       HMOname: 'משרד הבריאות',
+      key: 3,
    },
    {
       X: '34.7910032214594',
@@ -48,6 +52,7 @@ const clinicsData = [
       address: 'כיכר קפל',
       neighborhood: 'א',
       HMOname: 'כללית',
+      key: 4,
    },
    {
       X: '34.7961945738082',
@@ -58,6 +63,7 @@ const clinicsData = [
       address: 'אברהם אב',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 5,
    },
    {
       X: '34.7792945602832',
@@ -68,6 +74,7 @@ const clinicsData = [
       address: 'מבצע עוב',
       neighborhood: 'ו',
       HMOname: 'כללית',
+      key: 6,
    },
    {
       X: '34.7694825669637',
@@ -78,6 +85,7 @@ const clinicsData = [
       address: 'רחבת השי',
       neighborhood: 'יא',
       HMOname: 'כללית',
+      key: 7,
    },
    {
       X: '34.7770138833039',
@@ -88,6 +96,7 @@ const clinicsData = [
       address: "שד' ירושל",
       neighborhood: 'ט',
       HMOname: 'כללית',
+      key: 8,
    },
    {
       X: '34.7769396842581',
@@ -98,6 +107,7 @@ const clinicsData = [
       address: "שד' ירושל",
       neighborhood: 'ט',
       HMOname: 'משרד הבריאות',
+      key: 9,
    },
    {
       X: '34.7833332995624',
@@ -108,6 +118,7 @@ const clinicsData = [
       address: 'סמילנסקי',
       neighborhood: 'ע"ע',
       HMOname: 'כללית',
+      key: 10,
    },
    {
       X: '34.7940207244825',
@@ -118,6 +129,7 @@ const clinicsData = [
       address: 'שלושת בנ',
       neighborhood: 'ע"ע',
       HMOname: 'משרד הבריאות',
+      key: 11,
    },
    {
       X: '34.8094386794854',
@@ -128,6 +140,7 @@ const clinicsData = [
       address: 'חנה סנש',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 12,
    },
    {
       X: '34.8001168680703',
@@ -138,6 +151,7 @@ const clinicsData = [
       address: "שד' רגר",
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 13,
    },
    {
       X: '34.8022061383171',
@@ -148,6 +162,7 @@ const clinicsData = [
       address: 'הנרייטה',
       neighborhood: 'מרכז',
       HMOname: 'כללית',
+      key: 14,
    },
    {
       X: '34.8069169566676',
@@ -158,6 +173,7 @@ const clinicsData = [
       address: 'המעפילים',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 15,
    },
    {
       X: '34.773266888083',
@@ -168,6 +184,7 @@ const clinicsData = [
       address: "יוהנה ז'ב",
       neighborhood: 'נווה',
       HMOname: 'כללית',
+      key: 16,
    },
    {
       X: '34.7908652339435',
@@ -178,6 +195,7 @@ const clinicsData = [
       address: 'השיטה',
       neighborhood: 'נוונ',
       HMOname: 'כללית',
+      key: 17,
    },
    {
       X: '34.7663286098489',
@@ -188,6 +206,7 @@ const clinicsData = [
       address: 'אמנון',
       neighborhood: 'נווה',
       HMOname: 'כללית',
+      key: 18,
    },
    {
       X: '34.7818379235162',
@@ -198,6 +217,7 @@ const clinicsData = [
       address: "רח' עלייה",
       neighborhood: 'ה',
       HMOname: 'כללית',
+      key: 19,
    },
    {
       X: '34.8002638486205',
@@ -208,6 +228,7 @@ const clinicsData = [
       address: 'וינגייט',
       neighborhood: 'ג',
       HMOname: 'מאוחדת',
+      key: 20,
    },
    {
       X: '34.8143870240752',
@@ -218,6 +239,7 @@ const clinicsData = [
       address: 'הר כנען',
       neighborhood: 'רמות',
       HMOname: 'כללית',
+      key: 21,
    },
    {
       X: '34.7904031863755',
@@ -228,6 +250,7 @@ const clinicsData = [
       address: 'הוברמן - 9',
       neighborhood: 'ב',
       HMOname: 'משרד הבריאות',
+      key: 22,
    },
    {
       X: '34.7878610484445',
@@ -238,6 +261,7 @@ const clinicsData = [
       address: 'סנהדרין',
       neighborhood: 'ד',
       HMOname: 'משרד הבריאות',
+      key: 23,
    },
    {
       X: '34.7739852780022',
@@ -248,6 +272,7 @@ const clinicsData = [
       address: 'טבנקין',
       neighborhood: 'ה',
       HMOname: 'משרד הבריאות',
+      key: 24,
    },
    {
       X: '34.7938746736887',
@@ -258,6 +283,7 @@ const clinicsData = [
       address: 'שלושל בנ',
       neighborhood: '',
       HMOname: 'משרד הבריאות',
+      key: 25,
    },
    {
       X: '34.7711541170101',
@@ -268,6 +294,7 @@ const clinicsData = [
       address: 'הרב קוק',
       neighborhood: 'יא',
       HMOname: 'משרד הבריאות',
+      key: 26,
    },
    {
       X: '34.7968030889884',
@@ -278,6 +305,7 @@ const clinicsData = [
       address: 'שלמה המל',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 27,
    },
    {
       X: '34.7997196806624',
@@ -288,6 +316,7 @@ const clinicsData = [
       address: 'בנרייטה',
       neighborhood: 'מ.אז',
       HMOname: '',
+      key: 28,
    },
    {
       X: '34.7775983892115',
@@ -298,6 +327,7 @@ const clinicsData = [
       address: 'מבצע עוב',
       neighborhood: 'ו',
       HMOname: 'משרד הבריאות',
+      key: 29,
    },
    {
       X: '34.7739314177128',
@@ -308,6 +338,7 @@ const clinicsData = [
       address: 'בית - אל  3',
       neighborhood: 'ט',
       HMOname: 'מכבי',
+      key: 30,
    },
    {
       X: '34.8050662888418',
@@ -318,6 +349,7 @@ const clinicsData = [
       address: 'שלום גרש',
       neighborhood: 'רמות',
       HMOname: 'כללית',
+      key: 31,
    },
    {
       X: '34.7942576946646',
@@ -328,6 +360,7 @@ const clinicsData = [
       address: 'רגר',
       neighborhood: 'מ. אז',
       HMOname: 'כללית',
+      key: 32,
    },
    {
       X: '34.7942345989786',
@@ -338,6 +371,7 @@ const clinicsData = [
       address: 'רגר',
       neighborhood: 'מ.אז',
       HMOname: 'לאומית',
+      key: 33,
    },
    {
       X: '34.8044449987199',
@@ -348,6 +382,7 @@ const clinicsData = [
       address: 'הדעת - 102',
       neighborhood: 'רמות',
       HMOname: 'מכבי',
+      key: 34,
    },
    {
       X: '34.7934421402692',
@@ -358,6 +393,7 @@ const clinicsData = [
       address: 'א.אבינו',
       neighborhood: 'ד',
       HMOname: 'לאומית',
+      key: 35,
    },
    {
       X: '34.7679871379169',
@@ -368,6 +404,7 @@ const clinicsData = [
       address: 'שאול המל',
       neighborhood: 'יא',
       HMOname: 'לאומית',
+      key: 36,
    },
    {
       X: '34.8091614566938',
@@ -378,6 +415,7 @@ const clinicsData = [
       address: 'וינגייט -',
       neighborhood: 'ג',
       HMOname: 'משרד הבריאות',
+      key: 37,
    },
    {
       X: '34.7773199420162',
@@ -388,6 +426,7 @@ const clinicsData = [
       address: 'חנוך גבת',
       neighborhood: 'נחל',
       HMOname: 'משרד הבריאות',
+      key: 38,
    },
    {
       X: '34.8088232787186',
@@ -398,6 +437,7 @@ const clinicsData = [
       address: 'ורטהיימר',
       neighborhood: 'רמות',
       HMOname: 'משרד הבריאות',
+      key: 39,
    },
    {
       X: '34.7653241029184',
@@ -408,6 +448,7 @@ const clinicsData = [
       address: 'שומרון - 6',
       neighborhood: 'לון',
       HMOname: 'כללית',
+      key: 40,
    },
    {
       X: '34.784690768941',
@@ -418,6 +459,7 @@ const clinicsData = [
       address: 'עצמאות',
       neighborhood: 'דרום',
       HMOname: '',
+      key: 41,
    },
    {
       X: '34.7760195488957',
@@ -428,6 +470,7 @@ const clinicsData = [
       address: 'יוהנה 7',
       neighborhood: 'נווה',
       HMOname: 'מכבי',
+      key: 42,
    },
    {
       X: '34.7689176506175',
@@ -438,6 +481,7 @@ const clinicsData = [
       address: 'הרצוג - 2',
       neighborhood: '',
       HMOname: 'מכבי',
+      key: 43,
    },
    {
       X: '34.7695563608693',
@@ -448,6 +492,7 @@ const clinicsData = [
       address: 'חנה רובי',
       neighborhood: 'נווה',
       HMOname: 'מכבי',
+      key: 44,
    },
    {
       X: '34.8033170668627',
@@ -458,6 +503,7 @@ const clinicsData = [
       address: 'בן גוריו',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 45,
    },
    {
       X: '34.7992201185497',
@@ -468,6 +514,7 @@ const clinicsData = [
       address: 'יצחק בן צ',
       neighborhood: 'מ.אז',
       HMOname: 'לאומית',
+      key: 46,
    },
    {
       X: '34.7757138396281',
@@ -478,6 +525,7 @@ const clinicsData = [
       address: 'אשר ברש -',
       neighborhood: 'נ.זא',
       HMOname: 'לאומית',
+      key: 47,
    },
    {
       X: '34.790631060217',
@@ -488,6 +536,7 @@ const clinicsData = [
       address: 'הרצל-רמב',
       neighborhood: 'ע"ע',
       HMOname: 'לאומית',
+      key: 48,
    },
    {
       X: '34.7655264538261',
@@ -498,6 +547,7 @@ const clinicsData = [
       address: 'אמנון - 1',
       neighborhood: '',
       HMOname: 'לאומית',
+      key: 49,
    },
    {
       X: '34.7993802037233',
@@ -508,6 +558,7 @@ const clinicsData = [
       address: 'התקווה - 4',
       neighborhood: 'מ.אז',
       HMOname: 'מכבי',
+      key: 50,
    },
    {
       X: '34.7998044942016',
@@ -518,6 +569,7 @@ const clinicsData = [
       address: 'התקווה - 4',
       neighborhood: 'מ.אז',
       HMOname: 'מכבי',
+      key: 51,
    },
    {
       X: '34.8069665014505',
@@ -528,6 +580,7 @@ const clinicsData = [
       address: 'בן גוריו',
       neighborhood: 'מ.אז',
       HMOname: 'כללית',
+      key: 52,
    },
    {
       X: '34.8028464628415',
@@ -538,6 +591,7 @@ const clinicsData = [
       address: 'הנרייטה',
       neighborhood: 'מ.אז',
       HMOname: 'כללית',
+      key: 53,
    },
    {
       X: '34.7966296719178',
@@ -548,6 +602,7 @@ const clinicsData = [
       address: '',
       neighborhood: '',
       HMOname: '',
+      key: 54,
    },
    {
       X: '34.7966335328769',
@@ -558,6 +613,7 @@ const clinicsData = [
       address: '',
       neighborhood: '',
       HMOname: '',
+      key: 55,
    },
    {
       X: '34.7907892544368',
@@ -568,6 +624,7 @@ const clinicsData = [
       address: 'ביאליק',
       neighborhood: 'ב',
       HMOname: 'כללית',
+      key: 56,
    },
    {
       X: '34.7922136527957',
@@ -578,6 +635,7 @@ const clinicsData = [
       address: 'דוד המלך',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 57,
    },
    {
       X: '34.7995278732813',
@@ -588,6 +646,7 @@ const clinicsData = [
       address: 'קלאוזנר',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 58,
    },
    {
       X: '34.8008696571768',
@@ -598,6 +657,7 @@ const clinicsData = [
       address: 'רינגלבלו',
       neighborhood: 'ד',
       HMOname: 'משרד הבריאות',
+      key: 59,
    },
    {
       X: '34.7910032214594',
@@ -608,6 +668,7 @@ const clinicsData = [
       address: 'כיכר קפל',
       neighborhood: 'א',
       HMOname: 'כללית',
+      key: 60,
    },
    {
       X: '34.7961945738082',
@@ -618,6 +679,7 @@ const clinicsData = [
       address: 'אברהם אב',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 61,
    },
    {
       X: '34.7792945602832',
@@ -628,6 +690,7 @@ const clinicsData = [
       address: 'מבצע עוב',
       neighborhood: 'ו',
       HMOname: 'כללית',
+      key: 62,
    },
    {
       X: '34.7694825669637',
@@ -638,6 +701,7 @@ const clinicsData = [
       address: 'רחבת השי',
       neighborhood: 'יא',
       HMOname: 'כללית',
+      key: 63,
    },
    {
       X: '34.7770138833039',
@@ -648,6 +712,7 @@ const clinicsData = [
       address: "שד' ירושל",
       neighborhood: 'ט',
       HMOname: 'כללית',
+      key: 64,
    },
    {
       X: '34.7769396842581',
@@ -658,6 +723,7 @@ const clinicsData = [
       address: "שד' ירושל",
       neighborhood: 'ט',
       HMOname: 'משרד הבריאות',
+      key: 65,
    },
    {
       X: '34.7833332995624',
@@ -668,6 +734,7 @@ const clinicsData = [
       address: 'סמילנסקי',
       neighborhood: 'ע"ע',
       HMOname: 'כללית',
+      key: 66,
    },
    {
       X: '34.7940207244825',
@@ -678,6 +745,7 @@ const clinicsData = [
       address: 'שלושת בנ',
       neighborhood: 'ע"ע',
       HMOname: 'משרד הבריאות',
+      key: 67,
    },
    {
       X: '34.8094386794854',
@@ -688,6 +756,7 @@ const clinicsData = [
       address: 'חנה סנש',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 68,
    },
    {
       X: '34.8001168680703',
@@ -698,6 +767,7 @@ const clinicsData = [
       address: "שד' רגר",
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 69,
    },
    {
       X: '34.8022061383171',
@@ -708,6 +778,7 @@ const clinicsData = [
       address: 'הנרייטה',
       neighborhood: 'מרכז',
       HMOname: 'כללית',
+      key: 70,
    },
    {
       X: '34.8069169566676',
@@ -718,6 +789,7 @@ const clinicsData = [
       address: 'המעפילים',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 71,
    },
    {
       X: '34.773266888083',
@@ -728,6 +800,7 @@ const clinicsData = [
       address: "יוהנה ז'ב",
       neighborhood: 'נווה',
       HMOname: 'כללית',
+      key: 72,
    },
    {
       X: '34.7908652339435',
@@ -738,6 +811,7 @@ const clinicsData = [
       address: 'השיטה',
       neighborhood: 'נוונ',
       HMOname: 'כללית',
+      key: 73,
    },
    {
       X: '34.7663286098489',
@@ -748,6 +822,7 @@ const clinicsData = [
       address: 'אמנון',
       neighborhood: 'נווה',
       HMOname: 'כללית',
+      key: 74,
    },
    {
       X: '34.7818379235162',
@@ -758,6 +833,7 @@ const clinicsData = [
       address: "רח' עלייה",
       neighborhood: 'ה',
       HMOname: 'כללית',
+      key: 75,
    },
    {
       X: '34.8002638486205',
@@ -768,6 +844,7 @@ const clinicsData = [
       address: 'וינגייט',
       neighborhood: 'ג',
       HMOname: 'מאוחדת',
+      key: 76,
    },
    {
       X: '34.8143870240752',
@@ -778,6 +855,7 @@ const clinicsData = [
       address: 'הר כנען',
       neighborhood: 'רמות',
       HMOname: 'כללית',
+      key: 77,
    },
    {
       X: '34.7904031863755',
@@ -788,6 +866,7 @@ const clinicsData = [
       address: 'הוברמן - 9',
       neighborhood: 'ב',
       HMOname: 'משרד הבריאות',
+      key: 78,
    },
    {
       X: '34.7878610484445',
@@ -798,6 +877,7 @@ const clinicsData = [
       address: 'סנהדרין',
       neighborhood: 'ד',
       HMOname: 'משרד הבריאות',
+      key: 79,
    },
    {
       X: '34.7739852780022',
@@ -808,6 +888,7 @@ const clinicsData = [
       address: 'טבנקין',
       neighborhood: 'ה',
       HMOname: 'משרד הבריאות',
+      key: 80,
    },
    {
       X: '34.7938746736887',
@@ -818,6 +899,7 @@ const clinicsData = [
       address: 'שלושל בנ',
       neighborhood: '',
       HMOname: 'משרד הבריאות',
+      key: 81,
    },
    {
       X: '34.7711541170101',
@@ -828,6 +910,7 @@ const clinicsData = [
       address: 'הרב קוק',
       neighborhood: 'יא',
       HMOname: 'משרד הבריאות',
+      key: 82,
    },
    {
       X: '34.7968030889884',
@@ -838,6 +921,7 @@ const clinicsData = [
       address: 'שלמה המל',
       neighborhood: 'ד',
       HMOname: 'כללית',
+      key: 83,
    },
    {
       X: '34.7997196806624',
@@ -848,6 +932,7 @@ const clinicsData = [
       address: 'בנרייטה',
       neighborhood: 'מ.אז',
       HMOname: '',
+      key: 84,
    },
    {
       X: '34.7775983892115',
@@ -858,6 +943,7 @@ const clinicsData = [
       address: 'מבצע עוב',
       neighborhood: 'ו',
       HMOname: 'משרד הבריאות',
+      key: 85,
    },
    {
       X: '34.7739314177128',
@@ -868,6 +954,7 @@ const clinicsData = [
       address: 'בית - אל  3',
       neighborhood: 'ט',
       HMOname: 'מכבי',
+      key: 86,
    },
    {
       X: '34.8050662888418',
@@ -878,6 +965,7 @@ const clinicsData = [
       address: 'שלום גרש',
       neighborhood: 'רמות',
       HMOname: 'כללית',
+      key: 87,
    },
    {
       X: '34.7942576946646',
@@ -888,6 +976,7 @@ const clinicsData = [
       address: 'רגר',
       neighborhood: 'מ. אז',
       HMOname: 'כללית',
+      key: 88,
    },
    {
       X: '34.7942345989786',
@@ -898,6 +987,7 @@ const clinicsData = [
       address: 'רגר',
       neighborhood: 'מ.אז',
       HMOname: 'לאומית',
+      key: 89,
    },
    {
       X: '34.8044449987199',
@@ -908,6 +998,7 @@ const clinicsData = [
       address: 'הדעת - 102',
       neighborhood: 'רמות',
       HMOname: 'מכבי',
+      key: 90,
    },
    {
       X: '34.7934421402692',
@@ -918,6 +1009,7 @@ const clinicsData = [
       address: 'א.אבינו',
       neighborhood: 'ד',
       HMOname: 'לאומית',
+      key: 91,
    },
    {
       X: '34.7679871379169',
@@ -928,6 +1020,7 @@ const clinicsData = [
       address: 'שאול המל',
       neighborhood: 'יא',
       HMOname: 'לאומית',
+      key: 92,
    },
    {
       X: '34.8091614566938',
@@ -938,6 +1031,7 @@ const clinicsData = [
       address: 'וינגייט -',
       neighborhood: 'ג',
       HMOname: 'משרד הבריאות',
+      key: 93,
    },
    {
       X: '34.7773199420162',
@@ -948,6 +1042,7 @@ const clinicsData = [
       address: 'חנוך גבת',
       neighborhood: 'נחל',
       HMOname: 'משרד הבריאות',
+      key: 94,
    },
    {
       X: '34.8088232787186',
@@ -958,6 +1053,7 @@ const clinicsData = [
       address: 'ורטהיימר',
       neighborhood: 'רמות',
       HMOname: 'משרד הבריאות',
+      key: 95,
    },
    {
       X: '34.7653241029184',
@@ -968,6 +1064,7 @@ const clinicsData = [
       address: 'שומרון - 6',
       neighborhood: 'לון',
       HMOname: 'כללית',
+      key: 96,
    },
    {
       X: '34.784690768941',
@@ -978,6 +1075,7 @@ const clinicsData = [
       address: 'עצמאות',
       neighborhood: 'דרום',
       HMOname: '',
+      key: 97,
    },
    {
       X: '34.7760195488957',
@@ -988,6 +1086,7 @@ const clinicsData = [
       address: 'יוהנה 7',
       neighborhood: 'נווה',
       HMOname: 'מכבי',
+      key: 98,
    },
    {
       X: '34.7689176506175',
@@ -998,6 +1097,7 @@ const clinicsData = [
       address: 'הרצוג - 2',
       neighborhood: '',
       HMOname: 'מכבי',
+      key: 99,
    },
    {
       X: '34.7695563608693',
@@ -1008,6 +1108,7 @@ const clinicsData = [
       address: 'חנה רובי',
       neighborhood: 'נווה',
       HMOname: 'מכבי',
+      key: 100,
    },
    {
       X: '34.8033170668627',
@@ -1018,6 +1119,7 @@ const clinicsData = [
       address: 'בן גוריו',
       neighborhood: 'ג',
       HMOname: 'כללית',
+      key: 101,
    },
    {
       X: '34.7992201185497',
@@ -1028,6 +1130,7 @@ const clinicsData = [
       address: 'יצחק בן צ',
       neighborhood: 'מ.אז',
       HMOname: 'לאומית',
+      key: 102,
    },
    {
       X: '34.7757138396281',
@@ -1038,6 +1141,7 @@ const clinicsData = [
       address: 'אשר ברש -',
       neighborhood: 'נ.זא',
       HMOname: 'לאומית',
+      key: 103,
    },
    {
       X: '34.790631060217',
@@ -1048,6 +1152,7 @@ const clinicsData = [
       address: 'הרצל-רמב',
       neighborhood: 'ע"ע',
       HMOname: 'לאומית',
+      key: 104,
    },
    {
       X: '34.7655264538261',
@@ -1058,6 +1163,7 @@ const clinicsData = [
       address: 'אמנון - 1',
       neighborhood: '',
       HMOname: 'לאומית',
+      key: 105,
    },
    {
       X: '34.7993802037233',
@@ -1068,6 +1174,7 @@ const clinicsData = [
       address: 'התקווה - 4',
       neighborhood: 'מ.אז',
       HMOname: 'מכבי',
+      key: 106,
    },
    {
       X: '34.7998044942016',
@@ -1078,6 +1185,7 @@ const clinicsData = [
       address: 'התקווה - 4',
       neighborhood: 'מ.אז',
       HMOname: 'מכבי',
+      key: 107,
    },
    {
       X: '34.8069665014505',
@@ -1088,6 +1196,7 @@ const clinicsData = [
       address: 'בן גוריו',
       neighborhood: 'מ.אז',
       HMOname: 'כללית',
+      key: 108,
    },
    {
       X: '34.8028464628415',
@@ -1098,6 +1207,7 @@ const clinicsData = [
       address: 'הנרייטה',
       neighborhood: 'מ.אז',
       HMOname: 'כללית',
+      key: 109,
    },
    {
       X: '34.7966296719178',
@@ -1108,6 +1218,7 @@ const clinicsData = [
       address: '',
       neighborhood: '',
       HMOname: '',
+      key: 110,
    },
    {
       X: '34.7966335328769',
@@ -1118,6 +1229,7 @@ const clinicsData = [
       address: '',
       neighborhood: '',
       HMOname: '',
+      key: 111,
    },
 ];
 

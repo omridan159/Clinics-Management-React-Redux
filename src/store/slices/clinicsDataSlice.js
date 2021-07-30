@@ -10,7 +10,7 @@ export const clinicsDataSlice = createSlice({
    initialState,
    reducers: {
       updateClinicsData: (state, action) => {
-         const index = action.payload.rowIndex;
+         const index = action.payload.key;
          const filed = action.payload.columnId;
          const value = action.payload.value;
 

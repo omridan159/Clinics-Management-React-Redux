@@ -37,7 +37,7 @@ const ClinicsMap = ({ data }) => {
          >
             {data.map((clinic) => (
                <Marker
-                  key={clinic.Name}
+                  key={clinic.key}
                   position={{
                      lat: Number(clinic.Y),
                      lng: Number(clinic.X),

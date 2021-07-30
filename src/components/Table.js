@@ -13,8 +13,9 @@ const Table = ({ data }) => {
 
    const dispatch = useDispatch();
 
-   const onEditComplete = ({ value, columnId, rowIndex }) => {
-      dispatch(updateClinicsData({ value, columnId, rowIndex }));
+   const onEditComplete = ({ value, columnId, rowIndex, data }) => {
+      const key = data.key;
+      dispatch(updateClinicsData({ value, columnId, key }));
    };
 
    useEffect(() => {
